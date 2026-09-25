@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Three city stories — Los Angeles, Phoenix, New York — where tree inequality maps onto income and heat.">
+  <title>Case Studies — Who Gets Shade?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/charts.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="equity-bar" role="note"><div class="container"><strong>Equity lens:</strong> Each case study pairs a canopy gap with who lives in the gap — by income, race, and heat exposure.</div></div>
+
+  <nav class="top-nav" aria-label="Primary">
+    <div class="container top-nav-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◍</span><span class="brand-text">Who Gets <em>Shade?</em></span></a>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link" data-page="the-problem" href="the-problem.html">The Problem</a>
+        <a class="nav-link" data-page="the-data" href="the-data.html">The Data</a>
+        <a class="nav-link" data-page="case-studies" href="case-studies.html">Case Studies</a>
+        <a class="nav-link" data-page="take-action" href="take-action.html">Take Action</a>
+      </div>
+      <div class="nav-actions"><a class="btn-primary" href="take-action.html">Take action</a><button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span></span></button></div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="section-sm" style="background:var(--color-canvas-soft); border-bottom:1px solid var(--color-hairline);">
+      <div class="container">
+        <p class="eyebrow">Case Studies · Three metros, same thesis</p>
+        <h1 class="display-xl" style="margin-top:8px; max-width:800px;">The gap travels — with local reasons and local fixes.</h1>
+        <p class="body-lg" style="margin-top:12px; max-width:720px;">Below are short narratives plus a supporting data point each. All figures are illustrative sample syntheses — real source families are cited so you can audit or replace them with city open data.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container" style="display:grid; gap:48px;">
+
+        <!-- LA -->
+        <article class="card" style="padding:0; overflow:hidden;">
+          <div style="display:grid; grid-template-columns: 1.1fr 0.9fr;">
+            <div style="padding:32px;">
+              <span class="badge-pill">Los Angeles, CA</span>
+              <h2 class="display-md" style="margin-top:12px;">From 31% to 12%: canopy halves across the freeway</h2>
+              <p style="margin-top:12px;">South LA’s street grid was cut by freight rail and freeway interchanges in the 1950s–60s. Lots were paved, setbacks shrank, and the city’s tree budget followed the tax base uphill. A county canopy assessment found hillside tracts averaging ~31% cover while South LA tracts averaged ~12%. Summer surface temps tracked the gap: <strong>+7.4°C</strong> hotter on bare blocks — often the same blocks with the highest asthma rates.</p>
+              <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+                <span class="equity-tag">Income + race: 62% Latino, 18% Black in low-canopy tracts</span>
+              </div>
+              <p class="chart-note">Source: Sample synthesis of LA County Tree Canopy Assessment (2019) &amp; Landsat 8 summer LST — illustrative. See README for real retrieval steps.</p>
+              <a class="btn-tertiary" href="take-action.html#planner" style="margin-top:12px;">Planner action: cool-corridor plan →</a>
+            </div>
+            <div style="background:var(--color-canvas-soft); border-left:1px solid var(--color-hairline); padding:24px; display:grid; gap:12px; align-content:center;">
+              <div style="background:#fff; border:1px solid var(--color-hairline); border-radius:var(--radius-lg); padding:16px; text-align:center;">
+                <div style="font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--color-canopy-high);">31% → 12%</div>
+                <div class="caption" style="color:var(--color-muted);">High- vs low-income tract canopy</div>
+              </div>
+              <div style="background:#fff; border:1px solid var(--color-hairline); border-radius:var(--radius-lg); padding:16px; text-align:center;">
+                <div style="font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--color-heat-hot);">+7.4°C</div>
+                <div class="caption" style="color:var(--color-muted);">Peak surface temp delta</div>
+              </div>
+              <div class="caption" style="color:var(--color-muted); text-align:center;">Illustrative — marked as sample data</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Phoenix -->
+        <article class="card" style="padding:0; overflow:hidden;">
+          <div style="display:grid; grid-template-columns: 0.9fr 1.1fr;">
+            <div style="background:linear-gradient(180deg, #fff7ed 0%, #fed7aa 100%); padding:24px; display:grid; gap:12px; align-content:center;">
+              <div style="background:#fff; border:1px solid var(--color-hairline); border-radius:var(--radius-lg); padding:16px; text-align:center;">
+                <div style="font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--color-heat-hot);">+42 / 10k</div>
+                <div class="caption" style="color:var(--color-muted);">Excess heat ER visits (low vs high canopy)</div>
+              </div>
+              <div style="background:#fff; border:1px solid var(--color-hairline); border-radius:var(--radius-lg); padding:16px; text-align:center;">
+                <div style="font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--color-canopy-high);">–4.2°C</div>
+                <div class="caption" style="color:var(--color-muted);">Cool-corridor pilot delta</div>
+              </div>
+              <div class="caption" style="color:var(--color-muted); text-align:center;">Sample illustrative — Maricopa County synthesis</div>
+            </div>
+            <div style="padding:32px;">
+              <span class="badge-pill">Phoenix, AZ</span>
+              <h2 class="display-md" style="margin-top:12px;">Shade is survival infrastructure</h2>
+              <p style="margin-top:12px;">In Maricopa County, neighborhoods with &lt;10% cover recorded <strong>40+ excess heat-associated ER visits per 10k residents</strong> compared to &gt;30% neighborhoods over the 2020–2023 heat seasons. A city cool-corridor pilot (shade trees + light pavement + water) cut block-level radiant temp by 4.2°C — but only on streets where neighbors co-signed maintenance.</p>
+              <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+                <span class="equity-tag">Renters 58% in hottest tracts — shade without tenure</span>
+              </div>
+              <p class="chart-note">Source: Sample illustrative — see README for CDC heat surveillance + Maricopa County heat reports.</p>
+              <a class="btn-tertiary" href="take-action.html#resident" style="margin-top:12px;">Resident action: adopt-a-tree →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- NYC -->
+        <article class="card" style="padding:0; overflow:hidden;">
+          <div style="display:grid; grid-template-columns: 1.1fr 0.9fr;">
+            <div style="padding:32px;">
+              <span class="badge-pill">New York City, NY</span>
+              <h2 class="display-md" style="margin-top:12px;">The tree-belt and the heat-belt</h2>
+              <p style="margin-top:12px;">MillionTreesNYC lifted citywide canopy to ~22%, but gains clustered where planting strips already existed. Community districts in the Bronx and eastern Queens still show <strong>15–18 point gaps</strong> versus Upper Manhattan brownstone blocks. Schoolyards in the heat-belt average half the tree-equivalent shade of those in the tree-belt — an attendance gap on 90°F+ days.</p>
+              <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+                <span class="equity-tag">Bronx CD poverty rate 28% vs Manhattan 14% — canopy maps onto it</span>
+              </div>
+              <p class="chart-note">Source: NYC Urban Tree Canopy Assessment (2022) — figure shown is illustrative sample, not the exact city value.</p>
+              <a class="btn-tertiary" href="take-action.html#volunteer" style="margin-top:12px;">Volunteer action: stewardship census →</a>
+            </div>
+            <div style="background:var(--color-canvas-soft); border-left:1px solid var(--color-hairline); padding:24px; display:grid; gap:12px; align-content:center;">
+              <div style="background:#fff; border:1px solid var(--color-hairline); border-radius:var(--radius-lg); padding:16px; text-align:center;">
+                <div style="font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--color-ink);">22% citywide</div>
+                <div class="caption" style="color:var(--color-muted);">NYC canopy (2022 sample figure)</div>
+              </div>
+              <div style="background:#fff; border:1px solid var(--color-hairline); border-radius:var(--radius-lg); padding:16px; text-align:center;">
+                <div style="font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--color-canopy-mid);">18-pt gap</div>
+                <div class="caption" style="color:var(--color-muted);">Max–min community district delta</div>
+              </div>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='80'%3E%3Cline x1='20' y1='40' x2='380' y2='40' stroke='%23e7e5e4' stroke-width='1'/%3E%3Ccircle cx='80' cy='40' r='10' fill='%23c2e8ce'/%3E%3Ccircle cx='200' cy='40' r='10' fill='%233a9a57'/%3E%3Ccircle cx='320' cy='40' r='10' fill='%231a5c2e'/%3E%3Ctext x='80' y='65' font-size='10' text-anchor='middle' fill='%23777169'%3EBronx%3C/text%3E%3Ctext x='200' y='65' font-size='10' text-anchor='middle' fill='%23777169'%3EQueens%3C/text%3E%3Ctext x='320' y='65' font-size='10' text-anchor='middle' fill='%23777169'%3EU Manhattan%3C/text%3E%3C/svg%3E" alt="Three dots showing canopy gradient from low in Bronx to high in Upper Manhattan" style="margin-top:8px; border-radius:8px;">
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section-sm" style="background:var(--color-surface-dark); color:var(--color-on-dark);">
+      <div class="container-narrow center">
+        <p class="eyebrow" style="color:var(--color-on-dark-soft);">Synthesis</p>
+        <h2 class="display-lg" style="color:var(--color-on-dark); margin-top:8px;">Different histories, same physics.</h2>
+        <p style="color:var(--color-on-dark-soft); margin-top:12px;">Los Angeles (freeways), Phoenix (sprawl + heat), New York (rowhouse vs tower) each produced low-canopy tracts where lower-income residents now face hotter surfaces and worse air. The fix set is also shared: protect what exists, plant where the gap is widest, and fund maintenance — not just saplings.</p>
+        <a class="btn-primary" href="take-action.html" style="margin-top:20px; background:#fff; color:#0c0a09;">See what to do →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◍</span><span class="brand-text">Who Gets <em>Shade?</em></span></a><p>Three cities — same equity thesis, local histories.</p></div>
+        <div class="footer-col"><h4>Pages</h4><a href="the-problem.html">The Problem</a><a href="the-data.html">The Data</a><a href="case-studies.html">Case Studies</a><a href="take-action.html">Take Action</a></div>
+        <div class="footer-col"><h4>On this page</h4><a href="#main">LA · Phoenix · NYC</a></div>
+        <div class="footer-col"><h4>Project</h4><a href="../README.md">README</a><a href="../index.html">Home</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="footer-year">2026</span> Who Gets Shade?</span><span>All case stats marked sample + sourced</span></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

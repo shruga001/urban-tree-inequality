@@ -1,0 +1,98 @@
+[
+  {
+    "id": "laurel-heights",
+    "name": "Laurel Heights",
+    "city": "Sample Metro",
+    "incomeBracket": "High",
+    "medianIncome": 112000,
+    "canopyPct": 38,
+    "surfaceTempC": 31.2,
+    "aqiEstimate": 42,
+    "population": 18200,
+    "description": "Leafy, early-1900s suburb with historic oaks."
+  },
+  {
+    "id": "maple-ridge",
+    "name": "Maple Ridge",
+    "city": "Sample Metro",
+    "incomeBracket": "High",
+    "medianIncome": 98000,
+    "canopyPct": 34,
+    "surfaceTempC": 32.0,
+    "aqiEstimate": 48,
+    "population": 22400,
+    "description": "Park-adjacent streets, strong canopy ordinances."
+  },
+  {
+    "id": "oak-hollow",
+    "name": "Oak Hollow",
+    "city": "Sample Metro",
+    "incomeBracket": "Middle-High",
+    "medianIncome": 82000,
+    "canopyPct": 29,
+    "surfaceTempC": 33.3,
+    "aqiEstimate": 55,
+    "population": 19600,
+    "description": "Protected ravine, active stewardship group."
+  },
+  {
+    "id": "cedar-park",
+    "name": "Cedar Park",
+    "city": "Sample Metro",
+    "incomeBracket": "Middle-High",
+    "medianIncome": 76000,
+    "canopyPct": 26,
+    "surfaceTempC": 34.1,
+    "aqiEstimate": 62,
+    "population": 30100,
+    "description": "Mixed housing, partial street-tree program."
+  },
+  {
+    "id": "elm-district",
+    "name": "Elm District",
+    "city": "Sample Metro",
+    "incomeBracket": "Middle",
+    "medianIncome": 62000,
+    "canopyPct": 19,
+    "surfaceTempC": 36.4,
+    "aqiEstimate": 74,
+    "population": 27800,
+    "description": "Dense row-housing, narrow sidewalks."
+  },
+  {
+    "id": "river-ward",
+    "name": "River Ward",
+    "city": "Sample Metro",
+    "incomeBracket": "Middle-Low",
+    "medianIncome": 48000,
+    "canopyPct": 14,
+    "surfaceTempC": 37.8,
+    "aqiEstimate": 88,
+    "population": 35500,
+    "description": "Industrial edges, freight corridor nearby."
+  },
+  {
+    "id": "south-gate",
+    "name": "South Gate",
+    "city": "Sample Metro",
+    "incomeBracket": "Low",
+    "medianIncome": 36000,
+    "canopyPct": 9,
+    "surfaceTempC": 39.6,
+    "aqiEstimate": 102,
+    "population": 41200,
+    "description": "Wide asphalt streets, few street trees."
+  },
+  {
+    "id": "westfield-flats",
+    "name": "Westfield Flats",
+    "city": "Sample Metro",
+    "incomeBracket": "Low",
+    "medianIncome": 32000,
+    "canopyPct": 7,
+    "surfaceTempC": 40.8,
+    "aqiEstimate": 118,
+    "population": 38900,
+    "description": "Warehouse district turned housing, heat island core."
+  }
+]

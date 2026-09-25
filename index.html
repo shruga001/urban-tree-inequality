@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban tree inequality: how shade, cleaner air and cooler streets are unevenly distributed — and what we can do about it.">
+  <title>Who Gets Shade? — Urban Tree Inequality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/charts.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="equity-bar" role="note" aria-label="Equity framing">
+    <div class="container">
+      <strong>Equity lens:</strong> Tree cover is not just greenery — it tracks income and health outcomes. Every page keeps that disparity visible. <a href="pages/the-problem.html">Why it matters →</a>
+    </div>
+  </div>
+
+  <nav class="top-nav" aria-label="Primary">
+    <div class="container top-nav-inner">
+      <a class="brand" href="index.html" aria-label="Home — Who Gets Shade">
+        <span class="brand-mark" aria-hidden="true">◍</span>
+        <span class="brand-text">Who Gets <em>Shade?</em></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link" data-page="the-problem" href="pages/the-problem.html">The Problem</a>
+        <a class="nav-link" data-page="the-data" href="pages/the-data.html">The Data</a>
+        <a class="nav-link" data-page="case-studies" href="pages/case-studies.html">Case Studies</a>
+        <a class="nav-link" data-page="take-action" href="pages/take-action.html">Take Action</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn-primary" href="pages/the-data.html">Explore the map</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="orb orb-mint" aria-hidden="true"></div>
+      <div class="orb orb-peach" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Urban Tree Inequality · Environmental Justice</span>
+            <h1 id="hero-title" class="display-mega hero-title">
+              <span>Who gets shade,</span>
+              <span>cleaner air</span>
+              <span class="accent">&amp; cooler streets?</span>
+            </h1>
+            <p class="hero-lede">
+              In most U.S. metros, the leafiest blocks and the hottest blocks are only a few miles apart — and the gap follows income. Trees filter air, drop temperatures by 8–12°F, and cut energy bills. Where they are missing, heat illness and costs rise.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="pages/the-data.html">See the data</a>
+              <a class="btn-outline" href="pages/the-problem.html">Why it matters</a>
+            </div>
+            <div class="hero-stats" aria-label="Key numbers">
+              <div>
+                <div class="stat-value">31 pts</div>
+                <div class="stat-label">Canopy gap high vs low</div>
+              </div>
+              <div>
+                <div class="stat-value">+9.6°C</div>
+                <div class="stat-label">Surface temp Δ</div>
+              </div>
+              <div>
+                <div class="stat-value">2.4×</div>
+                <div class="stat-label">Heat ER risk</div>
+              </div>
+            </div>
+            <a class="scroll-cue" href="#story">Scroll into the story</a>
+          </div>
+
+          <div class="hero-visual" aria-label="Comparison of shaded versus bare street — same city, different canopy">
+            <div class="hero-visual-grid">
+              <div class="visual-col">
+                <span class="visual-badge">31°C · Shaded</span>
+                <div aria-hidden="true" style="font-size:42px;margin-bottom:12px;">🌳 🌳 🏡</div>
+                <div class="visual-temp">31°C</div>
+                <p class="visual-caption">38% canopy · Leafy block, historic oaks, permeable sidewalks</p>
+              </div>
+              <div class="visual-col">
+                <span class="visual-badge" style="background:#fee2e2;">41°C · Exposed</span>
+                <div aria-hidden="true" style="font-size:42px;margin-bottom:12px;">🏚️ ☀️ 🛣️</div>
+                <div class="visual-temp">41°C</div>
+                <p class="visual-caption">7% canopy · Bare asphalt, few trees, freight corridor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story preview -->
+    <section id="story" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The pattern, in one street</p>
+          <h2 class="display-lg">Shade is infrastructure — and it is rationed.</h2>
+          <p class="body-lg">Across the sample metro, the highest-income neighborhoods average <strong>34–38% canopy</strong> and 31–32°C summer surfaces. The lowest-income average <strong>7–9% canopy</strong> and 39–41°C. That 9°C gap is not random — it is zoning, redlining, and planting budgets compounding over decades.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card card-hover">
+            <div class="feature-icon canopy" aria-hidden="true">🌿</div>
+            <span class="equity-tag">Equity lens</span>
+            <h3 class="display-sm" style="margin-top:12px;">Shade access</h3>
+            <p class="caption" style="margin-top:8px;color:var(--color-body);">Street-tree spacing on affluent blocks: every 6–8 m. On bare blocks: every 40–60 m, if at all. School walk zones reflect the same gap.</p>
+            <a class="btn-tertiary" href="pages/the-problem.html" style="margin-top:12px;">Read the explainer →</a>
+          </article>
+          <article class="card card-hover">
+            <div class="feature-icon air" aria-hidden="true">🍃</div>
+            <span class="badge-pill">PM2.5 · O₃</span>
+            <h3 class="display-sm" style="margin-top:12px;">Cleaner air</h3>
+            <p class="caption" style="margin-top:8px;color:var(--color-body);">Leaves intercept particulates and lower ozone formation by cooling. Benefits fall off sharply below ~15% canopy — exactly where they are needed most.</p>
+            <a class="btn-tertiary" href="pages/the-data.html#air" style="margin-top:12px;">Compare AQI →</a>
+          </article>
+          <article class="card card-hover">
+            <div class="feature-icon heat" aria-hidden="true">🌡️</div>
+            <span class="badge-pill">Urban heat island</span>
+            <h3 class="display-sm" style="margin-top:12px;">Cooler streets</h3>
+            <p class="caption" style="margin-top:8px;color:var(--color-body);">Transpiration + shade can drop surface temps 8–12°F. Energy bills, heat illness, and learning outcomes track that difference.</p>
+            <a class="btn-tertiary" href="pages/the-data.html#heat" style="margin-top:12px;">View scatter →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini data teaser -->
+    <section class="section-sm" style="background:var(--color-canvas-soft); border-top:1px solid var(--color-hairline); border-bottom:1px solid var(--color-hairline);">
+      <div class="container">
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <p class="eyebrow">Interactive preview</p>
+            <h2 class="display-lg" style="margin-top:8px;">Income rises, canopy rises, temperature falls.</h2>
+            <p style="margin-top:12px;">Every point on the chart is a neighborhood. Hover to see the trade. The richest and poorest areas are only 5 miles apart on the ground — and 31 percentage points apart in cover.</p>
+            <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn-primary" href="pages/the-data.html">Open full data view</a>
+              <span class="caption" style="color:var(--color-muted); align-self:center;">Sample data — sources cited on page</span>
+            </div>
+          </div>
+          <div class="chart-wrap">
+            <div class="chart-header">
+              <div>
+                <div class="chart-title">Canopy vs median income (preview)</div>
+                <div class="chart-subtitle">Sample metro · 8 neighborhoods</div>
+              </div>
+              <div class="chart-legend">
+                <span><i class="legend-dot dot-canopy-high"></i>≥30%</span>
+                <span><i class="legend-dot dot-canopy-mid"></i>20–30%</span>
+                <span><i class="legend-dot dot-canopy-low"></i>&lt;15%</span>
+              </div>
+            </div>
+            <div id="preview-bar" aria-label="Bar chart preview" role="img"></div>
+            <p class="chart-note">Source: Illustrative sample dataset (see <a href="pages/the-data.html">The Data</a> for full citations). <strong>Equity note:</strong> wealthier tracts systematically host more canopy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="section" style="text-align:center;">
+      <div class="container-narrow">
+        <p class="eyebrow">Call to action</p>
+        <h2 class="display-lg" style="margin-top:8px;">What you can do depends on where you sit.</h2>
+        <p style="margin-top:12px;">Residents, planners, and volunteers each have distinct levers — from tree-adoption to cool-corridor budgets.</p>
+        <div style="margin-top:24px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn-primary" href="pages/take-action.html">Take action</a>
+          <a class="btn-outline" href="pages/case-studies.html">See city stories</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">◍</span>
+            <span class="brand-text">Who Gets <em>Shade?</em></span>
+          </a>
+          <p>An editorial data story on how shade, air, and cool streets are distributed — and who is left exposed. Built in plain HTML/CSS/JS.</p>
+          <p class="footer-source"><strong>Equity framing retained on every page</strong> per architecture requirements. No stat appears without a source note.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="pages/the-problem.html">The Problem</a>
+          <a href="pages/the-data.html">The Data</a>
+          <a href="pages/case-studies.html">Case Studies</a>
+          <a href="pages/take-action.html">Take Action</a>
+        </div>
+        <div class="footer-col">
+          <h4>Data</h4>
+          <a href="pages/the-data.html">Interactive charts</a>
+          <a href="pages/the-data.html#compare">Neighborhood compare</a>
+          <a href="assets/data/neighborhoods.json" download>Download sample JSON</a>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <a href="README.md">README &amp; sources</a>
+          <a href="pages/the-problem.html#methods">Methods</a>
+          <a href="#main">Back to top ↑</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="footer-year">2026</span> Who Gets Shade? · Sample data clearly labeled; real sources listed on data page.</span>
+        <span>Design: ElevenLabs editorial · Fonts: EB Garamond (Waldenburg fallback) + Inter</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+</html>

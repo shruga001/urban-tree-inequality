@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive charts and neighborhood comparison: canopy vs income, heat, and air quality.">
+  <title>The Data — Who Gets Shade?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/charts.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="equity-bar" role="note"><div class="container"><strong>Equity lens:</strong> Every chart is ordered or colored to surface the income–canopy link — not to hide it.</div></div>
+
+  <nav class="top-nav" aria-label="Primary">
+    <div class="container top-nav-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◍</span><span class="brand-text">Who Gets <em>Shade?</em></span></a>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link" data-page="the-problem" href="the-problem.html">The Problem</a>
+        <a class="nav-link" data-page="the-data" href="the-data.html">The Data</a>
+        <a class="nav-link" data-page="case-studies" href="case-studies.html">Case Studies</a>
+        <a class="nav-link" data-page="take-action" href="take-action.html">Take Action</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn-primary" href="take-action.html">Take action</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="section-sm" style="background:var(--color-canvas-soft); border-bottom:1px solid var(--color-hairline);">
+      <div class="container">
+        <p class="eyebrow">The Data · Interactive</p>
+        <h1 class="display-xl" style="margin-top:8px; max-width:800px;">Canopy follows income. Temperature follows canopy.</h1>
+        <p class="body-lg" style="margin-top:12px; max-width:720px;">Use the charts and the neighborhood grid to test the pattern yourself. All values below are <strong>illustrative sample data</strong> with the same shape as published assessments — each cites a real-world source family so you can swap in city data.</p>
+        <p class="caption" style="margin-top:12px; color:var(--color-muted);">Progressive enhancement: if JS fails, the table below still tells the story.</p>
+      </div>
+    </header>
+
+    <!-- Bar chart -->
+    <section class="section" aria-labelledby="bar-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Chart 1 — Canopy by income</p>
+          <h2 id="bar-title" class="display-lg">The richer the tract, the leafier the street</h2>
+          <p>Ordered by median income (high → low). Bar color encodes canopy depth. Hover or focus a bar for stats. Keyboard: Tab to each bar.</p>
+        </div>
+        <div class="chart-wrap">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">Canopy cover (%) by neighborhood</div>
+              <div class="chart-subtitle">Sorted by median income — equity ordering</div>
+            </div>
+            <div class="chart-legend">
+              <span><i class="legend-dot dot-canopy-high"></i>≥30% high</span>
+              <span><i class="legend-dot dot-canopy-mid"></i>20–30% mid</span>
+              <span><i class="legend-dot dot-canopy-low"></i>&lt;15% low</span>
+            </div>
+          </div>
+          <div id="bar-chart" role="img" aria-label="Bar chart: canopy percent ordered by income"></div>
+          <p class="chart-note">Source: <strong>Sample data</strong> shaped from American Forests Tree Equity Score &amp; local canopy LiDAR; income from ACS 2022 5-yr tract estimates. Replace with your city's open data. <span class="equity-tag" style="margin-left:8px;">Equity: 31-point gap high vs low</span></p>
+        </div>
+
+        <!-- Static table fallback -->
+        <div class="data-table-wrap" style="margin-top:24px;">
+          <table class="data-table" aria-label="Neighborhood data table — fallback content">
+            <thead>
+              <tr><th>Neighborhood</th><th>Income bracket</th><th>Median income</th><th>Canopy</th><th>Surface temp</th><th>AQI est.</th></tr>
+            </thead>
+            <tbody id="data-table-body">
+              <!-- Filled by JS; static rows as fallback before JS loads -->
+              <tr><td>Laurel Heights</td><td>High</td><td>$112,000</td><td>38%</td><td>31.2°C</td><td>42</td></tr>
+              <tr><td>Maple Ridge</td><td>High</td><td>$98,000</td><td>34%</td><td>32.0°C</td><td>48</td></tr>
+              <tr><td>Oak Hollow</td><td>Middle-High</td><td>$82,000</td><td>29%</td><td>33.3°C</td><td>55</td></tr>
+              <tr><td>Cedar Park</td><td>Middle-High</td><td>$76,000</td><td>26%</td><td>34.1°C</td><td>62</td></tr>
+              <tr><td>Elm District</td><td>Middle</td><td>$62,000</td><td>19%</td><td>36.4°C</td><td>74</td></tr>
+              <tr><td>River Ward</td><td>Middle-Low</td><td>$48,000</td><td>14%</td><td>37.8°C</td><td>88</td></tr>
+              <tr><td>South Gate</td><td>Low</td><td>$36,000</td><td>9%</td><td>39.6°C</td><td>102</td></tr>
+              <tr><td>Westfield Flats</td><td>Low</td><td>$32,000</td><td>7%</td><td>40.8°C</td><td>118</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scatter -->
+    <section id="heat" class="section-sm" style="background:var(--color-canvas-soft); border-top:1px solid var(--color-hairline); border-bottom:1px solid var(--color-hairline);" aria-labelledby="scatter-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Chart 2 — Canopy vs heat</p>
+          <h2 id="scatter-title" class="display-lg">More leaves, lower surface heat</h2>
+          <p>Each dot is a neighborhood; size hints at income, color hints at heat. The dashed line is the trend — not a statistical model, but the visual story.</p>
+        </div>
+        <div class="chart-wrap">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title" id="air">Canopy vs summer surface temperature</div>
+              <div class="chart-subtitle">AQI is in the tooltip — the same neighborhoods breathe worse where they are hotter</div>
+            </div>
+            <div class="chart-legend">
+              <span><i class="legend-dot dot-heat-hot"></i>Hot ≥39°C</span>
+              <span><i class="legend-dot dot-heat-warm"></i>Warm 35–38°C</span>
+              <span><i class="legend-dot dot-canopy-high"></i>Cool ≤33°C</span>
+            </div>
+          </div>
+          <div id="scatter-chart" role="img" aria-label="Scatter plot canopy versus temperature"></div>
+          <p class="chart-note">Source: <strong>Sample data</strong> — thermal band modeled on Landsat 8/9 summer LST composites; canopy from illustrative LiDAR. See methods in README. Trend: ≈ –0.28°C per +1 pt canopy in this sample.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map / compare tool -->
+    <section id="compare" class="section" aria-labelledby="map-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Neighborhood comparison tool</p>
+          <h2 id="map-title" class="display-lg">Pick any two blocks. Compare what it feels like to live there.</h2>
+          <p>Tap or click neighborhoods (keyboard: Tab + Enter). Side-by-side stats appear below. Heat tint shows surface temp; background green depth shows canopy.</p>
+        </div>
+
+        <div class="map-wrap">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+            <div class="chart-title">Sample metro — 8 neighborhoods</div>
+            <button id="map-clear" type="button" class="btn-outline" style="height:36px; font-size:13px;">Clear selection</button>
+          </div>
+
+          <div id="map-grid" aria-live="polite"></div>
+
+          <div class="heat-legend" aria-hidden="true">
+            <span>Canopy high →</span>
+            <span class="heat-legend-bar"></span>
+            <span>→ Heat high</span>
+          </div>
+
+          <div id="compare-panel" style="margin-top:20px;" aria-live="polite"></div>
+
+          <p class="chart-note">Source: Sample dataset (js/data.js). Heat tint: 30–42°C ramp. <strong>Equity check:</strong> the two “low” income cells sit at 7–9% canopy and 39–41°C — the income–heat link is visible before you click.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container-narrow center">
+        <p class="eyebrow">Next</p>
+        <h2 class="display-md" style="margin-top:8px;">Same pattern, three real metros</h2>
+        <p style="margin-top:12px;">Los Angeles, Phoenix, and New York show the same income–canopy–heat coupling with local wrinkles.</p>
+        <a class="btn-primary" href="case-studies.html" style="margin-top:20px;">Read case studies →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◍</span><span class="brand-text">Who Gets <em>Shade?</em></span></a><p>Interactive equity data — every chart cites a source, even sample data.</p></div>
+        <div class="footer-col"><h4>Pages</h4><a href="the-problem.html">The Problem</a><a href="the-data.html">The Data</a><a href="case-studies.html">Case Studies</a><a href="take-action.html">Take Action</a></div>
+        <div class="footer-col"><h4>On this page</h4><a href="#compare">Compare tool</a><a href="#heat">Canopy vs heat</a></div>
+        <div class="footer-col"><h4>Project</h4><a href="../README.md">README</a><a href="../index.html">Home</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="footer-year">2026</span> Who Gets Shade?</span><span>Charts: vanilla SVG · No libraries</span></div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/charts.js"></script>
+  <script src="../js/map.js"></script>
+</body>
+</html>
